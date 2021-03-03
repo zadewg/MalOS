@@ -1,7 +1,13 @@
 # MalOS
 > Malos means bad guys in Spanish. Mal means wrong. This is a pretty wrong OS for the bad guys.
 
-I use this code for OS and low level security research. The kernel is written in C and ssembler routines are in NASM (intel like) syntax where possible - inline C uses AT&T style. 
+
+Kernel                        |  Bootloader
+:-------------------------:|:-------------------------:
+![kernel](https://user-images.githubusercontent.com/38017709/109738168-9dbc3e00-7bc7-11eb-9bab-b676fbb0d521.png) | ![boot](https://user-images.githubusercontent.com/38017709/109738330-ed026e80-7bc7-11eb-831a-a53b675355a5.png)
+
+
+I use this code for OS and low level security research. The kernel is written in C and assembler routines are in NASM (intel like) syntax where possible - inline C uses AT&T style. 
 
 ### **Features**
 * BIOS bootloader with 16-bit real mode and 32-bit protected mode debugging display routines in assembler.
@@ -27,7 +33,7 @@ I use this code for OS and low level security research. The kernel is written in
 * Filesystem 
 
 ### **Usage**
-Run `make` in ./BIOS to compile the code and `make run` to launch QEMU.
+Run `make` in ./BIOS to compile the code and `make run` to launch QEMU. You can exit QEMU pressing Alt+2, then typing quit+enter.
 
 ### **Registering Interrupts**
 ``` c
