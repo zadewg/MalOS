@@ -1,6 +1,3 @@
-A tiny x86 Operating System providing basic routines for low level research.
-
-
 # MalOS
 > Malos means bad guys in Spanish. Mal means wrong. This is a pretty wrong OS for the bad guys.
 
